@@ -1,0 +1,4 @@
+travel-agency/
+├── index.html
+├── styles.css
+└── script.js
