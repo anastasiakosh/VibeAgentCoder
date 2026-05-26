@@ -1,49 +1,102 @@
-<!DOCTYPE html>                                                                
- <html lang="en">                                                               
- <head>                                                                         
-     <meta charset="UTF-8">                                                     
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">     
-     <title>Travel Agency</title>                                               
-     <link rel="stylesheet" href="styles.css">                                  
- </head>                                                                        
- <body>                                                                         
-     <header class="glassmorphism">                                             
-         <h1>Welcome to Our Travel Agency</h1>                                  
-     </header>                                                                  
-                                                                                
-     <section id="home" class="glassmorphism">                                  
-         <h2>Home</h2>                                                          
-         <p>This is the home section of our travel agency.</p>                  
-     </section>                                                                 
-                                                                                
-     <section id="directions" class="glassmorphism">                            
-         <h2>Picked Directions</h2>                                             
-         <ul id="direction-list"></ul>                                          
-     </section>                                                                 
-                                                                                
-     <section id="specialist" class="glassmorphism">                            
-         <h2>Travel Agency Specialist</h2>                                      
-         <p>This section showcases our travel agency specialists.</p>           
-     </section>                                                                 
-                                                                                
-     <section id="map" class="glassmorphism">                                   
-         <h2>Map</h2>                                                           
-         <iframe                                                                
- src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2489.40567354038!2d- 
- 73.9878146!3d40.712784!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v16330272959 
- 58!5m2!1sen!2sus" width="100%" height="450px" style="border:0;"                
- allowfullscreen="" loading="lazy"></iframe>                                    
-     </section>                                                                 
-                                                                                
-     <section id="transport" class="glassmorphism">                             
-         <h2>Means of Transport</h2>                                            
-         <div id="autoscroll-transport"></div>                                  
-     </section>                                                                 
-                                                                                
-     <footer class="glassmorphism">                                             
-         <p>&copy; 2023 Travel Agency. All rights reserved.</p>                 
-     </footer>                                                                  
-                                                                                
-     <script src="script.js"></script>                                          
- </body>                                                                        
- </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency | Discover the Unknown</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="custom-cursor"></div>
+
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <header class="hero">
+        <div class="hero-wrapper">
+            <div class="glass-pass fade-in">
+                <h1>Welcome to the Unknown</h1>
+                <p>Your journey begins where the map ends.</p>
+                <button class="btn-primary magnetic">Book Now</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <h2 class="reveal-text">We craft bespoke travel experiences tailored to your wildest dreams. No scripts, just pure adventure.</h2>
+    </section>
+
+    <section class="directions" id="directions">
+        <div class="bento-grid">
+            <div class="bento-item wide fade-in parallax-item" data-speed="0.05">
+                <div class="overlay"><h3>Tokyo</h3></div>
+            </div>
+            <div class="bento-item tall fade-in parallax-item" data-speed="-0.05">
+                <div class="overlay"><h3>Paris</h3></div>
+            </div>
+            <div class="bento-item fade-in parallax-item" data-speed="0.08">
+                <div class="overlay"><h3>New York</h3></div>
+            </div>
+            <div class="bento-item fade-in parallax-item" data-speed="-0.03">
+                <div class="overlay"><h3>London</h3></div>
+            </div>
+            <div class="bento-item wide fade-in parallax-item" data-speed="0.06">
+                <div class="overlay"><h3>Sydney</h3></div>
+            </div>
+            <div class="bento-item fade-in parallax-item" data-speed="-0.08">
+                <div class="overlay"><h3>Bangkok</h3></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="specialists" id="specialists">
+        <h2 class="section-title fade-in">Meet Your Guides</h2>
+        <div class="specialist-cards">
+            <div class="card tilt-card fade-in">
+                <div class="avatar"></div>
+                <h4>Elena R.</h4>
+                <p>Asia Expert</p>
+            </div>
+            <div class="card tilt-card fade-in" style="transition-delay: 0.15s;">
+                <div class="avatar"></div>
+                <h4>Marcus T.</h4>
+                <p>Alpine Adventures</p>
+            </div>
+            <div class="card tilt-card fade-in" style="transition-delay: 0.3s;">
+                <div class="avatar"></div>
+                <h4>Sarah L.</h4>
+                <p>Tropical Escapes</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section" id="map">
+        <div class="abstract-map fade-in">
+            <div class="radar-dot" style="top: 30%; left: 20%;"></div>
+            <div class="radar-dot" style="top: 50%; left: 50%;"></div>
+            <div class="radar-dot" style="top: 40%; left: 80%;"></div>
+        </div>
+    </section>
+
+    <footer class="footer-wrapper">
+        <div class="marquee">
+            <div class="marquee-content left">
+                <span>✈️ PLANE</span> <span>🚆 TRAIN</span> <span>🚢 SHIP</span> <span>🚌 BUS</span>
+                <span>✈️ PLANE</span> <span>🚆 TRAIN</span> <span>🚢 SHIP</span> <span>🚌 BUS</span>
+            </div>
+        </div>
+        <div class="marquee">
+            <div class="marquee-content right">
+                <span>🏔️ MOUNTAINS</span> <span>🏝️ ISLANDS</span> <span>🏜️ DESERTS</span> <span>🏙️ CITIES</span>
+                <span>🏔️ MOUNTAINS</span> <span>🏝️ ISLANDS</span> <span>🏜️ DESERTS</span> <span>🏙️ CITIES</span>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Travel Agency. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
